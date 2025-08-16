@@ -1,0 +1,90 @@
+.calculator {
+    margin: 0 auto;
+    width: 150px;
+    background-color: rgb(71, 68, 68);
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+button,
+input {
+    background-color: inherit;
+    border: none;
+    font-size: 10px;
+    color: aliceblue;
+}
+input {
+    text-align: end;
+}
+.fa-solid {
+    padding: 0px;
+    margin: 0px;
+}
+.top {
+    z-index: 1;
+    height: 15px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+/* hidden divs */
+/* Menu */
+.menu {
+    display: none;
+    z-index: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    height: 292px;
+    width: 100px;
+    padding-left: 10px;
+    font-size: 6px;
+}
+.menu h6 {
+    margin: 5px;
+}
+ul {
+    padding: 0px 10px;
+    list-style-type: none;
+    line-height: 10px;
+}
+/* Setting */
+.setting {
+    display: none;
+    z-index: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    height: 292px;
+    width: 100px;
+    padding-left: 10px;
+    font-size: 6px;
+}
+/* hidden */
+
+#expression {
+    width: 150px;
+    padding: 0px;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.more button {
+    font-size: 7px;
+    margin-right: 3px;
+    opacity: 0.7;
+}
+.keypad {
+    margin-top: 10px;
+    width: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    text-align: center;
+}
+.ketbtn {
+    background-color: rgb(115, 111, 111);
+    border: none;
+    border-radius: 25px;
+}

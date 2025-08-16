@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple calculator</title>
+        <link rel="icon" href="calculatoriframe.png" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="Cal.css" />
+    </head>
+    <body>
+        <!-- Always on screen -->
+        <div class="calculator">
+            <div class="top">
+                <div class="menu">
+                    <h4>
+                        Select Type&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button id="menuClose">x</button>
+                    </h4>
+                    <h6>Calculator</h6>
+                    <ul>
+                        <li>Standard</li>
+                        <li>Scientific</li>
+                        <li>Graphing</li>
+                        <li>Programmer</li>
+                        <li>Date calculation</li>
+                    </ul>
+                    <h6>Convertor</h6>
+                    <ul>
+                        <li>Currency</li>
+                        <li>Volume</li>
+                        <li>Length</li>
+                        <li>Weight and mass</li>
+                        <li>Temperature</li>
+                        <li>Energy</li>
+                        <li>Area</li>
+                        <li>Speed</li>
+                        <li>Time</li>
+                        <li>Power</li>
+                        <li>Data</li>
+                        <li>Pressure</li>
+                        <li>Angle</li>
+                    </ul>
+                </div>
+                <button class="fa-solid fa-bars" id="menuIcon"></button>
+                <button class="fa-solid fa-gears" id="settingIcon"></button>
+                <div class="setting">
+                    <h4 style="text-align-last: right; margin-right: 15px">
+                        <button id="settingClose">x</button>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        SETTING
+                    </h4>
+                    <ul>
+                        <li>App theme</li>
+                        <li>font</li>
+                        <li>
+                            Button sound&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fa-solid fa-toggle-off"></i>
+                        </li>
+                        <li>Clear History</li>
+                        <li>Default calculator type</li>
+                        <li>Accessibility</li>
+                        <li>Language</li>
+                        <li>About</li>
+                        <li>Reset</li>
+                    </ul>
+                </div>
+            </div>
+            <input type="text" id="expression" />
+            <div class="more">
+                <button class="fa-solid fa-clock-rotate-left"></button>
+                <button class="fa-solid fa-angles-right"></button>
+                <button class="fa-solid fa-dollar-sign"></button>
+            </div>
+            <div class="keypad">
+                <button class="ketbtn">AC</button>
+                <button class="ketbtn">⌫</button>
+                <button class="ketbtn">+/-</button>
+                <button class="ketbtn">÷</button>
+                <button class="ketbtn">1</button>
+                <button class="ketbtn">2</button>
+                <button class="ketbtn">3</button>
+                <button class="ketbtn">×</button>
+                <button class="ketbtn">4</button>
+                <button class="ketbtn">5</button>
+                <button class="ketbtn">6</button>
+                <button class="ketbtn">-</button>
+                <button class="ketbtn">7</button>
+                <button class="ketbtn">8</button>
+                <button class="ketbtn">9</button>
+                <button class="ketbtn">+</button>
+                <button class="ketbtn">%</button>
+                <button class="ketbtn">0</button>
+                <button class="ketbtn">.</button>
+                <button class="ketbtn" id="done">=</button>
+            </div>
+        </div>
+
+        <!--  -->
+        <script src="Cal.js"></script>
+    </body>
+</html>
